@@ -1,0 +1,20 @@
+# portscan
+
+A fast multithreaded port scanner with service banner grabbing. Pure Python, zero dependencies.
+
+## Features
+
+- TCP connect scan with multithreading
+- Service banner grabbing on open ports
+- Common port presets (top services)
+- Full port range scan (1-65535)
+- Custom port ranges
+- JSON output
+- Configurable thread count and timeout
+- Real-time progress reporting
+
+## Usage
+
+### Scan common ports
+```bash
+python portscan.py 192.168.1.1
