@@ -1,0 +1,18 @@
+Scan custom range
+python portscan.py 192.168.1.1 --ports 1-1000
+Scan all 65535 ports
+python portscan.py 192.168.1.1 --all-ports
+Fast scan with 200 threads
+python portscan.py 192.168.1.1 -t 200 --timeout 0.5
+Save results to JSON
+python portscan.py 192.168.1.1 -o results.json
+Options
+Flag	Description
+--ports	Port range (e.g. 1-1000) or "common" (default: common)
+--all-ports	Scan all 65535 ports
+-t	Number of threads (default: 100)
+--timeout	Connection timeout in seconds (default: 1.0)
+-o	Save results to JSON file
+-v	Verbose output
+Requirements
+Python 3.6+
